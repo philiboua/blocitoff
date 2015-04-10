@@ -1,0 +1,50 @@
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.container{
+  text-align:center;
+}
+body{
+  background-color: #778899;
+  color:#fff;
+  text-align:center;
+}
+
+.title_app{
+  margin-top:7%;
+}
+
+
+.subtitle{
+  font-size:90px;
+  margin-top:20px;
+}
+
+::-webkit-input-placeholder {
+  text-decoration:line-through;
+  color: red;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-decoration:line-through;
+  color: red;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-decoration:line-through;
+  color: red;  
+
+
+}
+
+:-ms-input-placeholder {  
+  text-decoration:line-through;
+  color: red;  
+
+
+
+}
