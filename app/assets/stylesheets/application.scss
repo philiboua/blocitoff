@@ -3,18 +3,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+  /* Start welcome style path= views/welcome/index */
 
-.container{
+.container{ 
   text-align:center;
 }
 body{
-  background-color: #778899;
+  background-color:#829db4;
+  /*background-color: #778899;*/
   text-align:center;
 }
 
 .title_app{
-  margin-top:7%;
+  margin-top: 30px;
   color:#fff;
+  text-align: center;
+}
+
+.right-nav{
+  margin-top:10px;
+  margin-right: 16px;
 }
 
 
@@ -24,29 +32,57 @@ body{
   color:#fff;
 
 }
+  /* style the placeholder welcome page */
 
 ::-webkit-input-placeholder {
-  text-decoration:line-through;
-  color: red;
-
+text-decoration:line-through;
+color: red;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder { 
+text-decoration:line-through;
+color: red;  
+}
+
+::-moz-placeholder {  
   text-decoration:line-through;
   color: red;  
 }
-
-::-moz-placeholder {  /* Firefox 19+ */
-  text-decoration:line-through;
-  color: red;  
-
-
-}
-
 :-ms-input-placeholder {  
   text-decoration:line-through;
   color: red;  
+}
 
+  /* start registration and new session devise */
+.title_page{
+  color:#fff;
+}
+.login { 
+  margin:0 auto;
+  text-align: center;
+}
 
+.field_login{
+  width: 400px;
+  margin:0 auto;
+}
+
+.form_login{
+  margin-top: 20px;
+}
+
+.form-group label {
+  color:#fff;
+}
+
+.password_length_indication{
+  color: #fff;
+}
+
+/* start login style path devise/sessions/new */
+
+.login_title{
 
 }
+
+
