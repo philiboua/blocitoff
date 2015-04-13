@@ -1,21 +1,25 @@
-<h2 class='title_page'>Log in</h2>
+
 
 <div class='container'>
   <div class='row'>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class='fake_item_list'>
+      <p class='catch_sentence'> Blocitoff, a todo list application. Create your list today!</p>
+    <%=image_tag("bloc1.png", alt: "to-do list item 1")%>
+    <%=image_tag("bloc2.png", alt: "to-do list item 1")%>
+    <%=image_tag("bloc3.png", alt: "to-do list item 1")%>
+     <%=image_tag("bloc4.png", alt: "to-do list item 1")%>
+  </div>
 
-    <div class="form-group form_login">
-        <%= f.label :name %>
-        <%= f.text_field :name, autofocus: true, class: 'form-control field_login', placeholder: "Enter name" %>
-    </div>
-
+  <div class='login_form'>
+    <h2 class='title_page'>Sign in</h2>
     <div class="form-group ">
-      <%= f.label :email %><br />
+      <%= f.label :email, class: 'pull-left' %><br />
       <%= f.email_field :email, autofocus: true,class: 'form-control field_login' %>
     </div>
 
     <div class="form-group">
-      <%= f.label :password %><br />
+      <%= f.label :password, class: 'pull-left' %><br />
       <%= f.password_field :password, autocomplete: "off",class: 'form-control field_login'%>
     </div>
 
@@ -23,14 +27,17 @@
   <% if devise_mapping.rememberable? -%>
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
+       <%= f.submit "Log in", class: 'btn btn-success' %>
     </div>
   <% end -%>
 
     <div class="actions">
-      <%= f.submit "Log in", class: 'btn btn-success' %>
+     
+      <%= render "devise/shared/links" %>
     </div>
+  </div>
   <% end %>
   </div>
 </div>
 
-<%= render "devise/shared/links" %>
+

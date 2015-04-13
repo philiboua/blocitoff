@@ -9,6 +9,7 @@
   text-align:center;
 }
 body{
+
   background-color:#829db4;
   /*background-color: #778899;*/
   text-align:center;
@@ -81,8 +82,20 @@ color: red;
 
 /* start login style path devise/sessions/new */
 
-.login_title{
+.login_form{
+  float:right;
+  margin-right-color:#fff;
+  margin-right: 120px;
 
 }
 
+.fake_item_list{
+  width: 460px;
+  float:left;
+  margin-top:40px;
 
+}
+.catch_sentence{
+  color:#fff;
+  font-size: 17px;
+}
