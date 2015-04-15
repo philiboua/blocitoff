@@ -1,4 +1,4 @@
-<h2 style='color:#fff'> Hey <%= @user.name.capitalize  %> !</h2>
+<h2 style='color:#fff'> Hey <%= current_user.name.capitalize  %> !</h2>
   <% if (@user.items.blank? )  %>
     <p style='color:#fff;'>Let's create your first Todo list, i will help you further</p>
   <% else  %>
