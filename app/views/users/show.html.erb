@@ -1,2 +1,20 @@
-<h1> Hi <%= @user.name %></h1>
-<p>Let's create your first Todo list, i will help you further</p>
+<h2 style='color:#fff'> Hey <%= @user.name.capitalize  %> !</h2>
+  <% if (@user.items.blank? )  %>
+    <p style='color:#fff;'>Let's create your first Todo list, i will help you further</p>
+  <% else  %>
+    <p style='color:#fff;'> Time to finish the task(s) listed below </p>
+  <% end %>
+
+
+<%= render partial: 'items/form' %>
+</br>
+<%= render @items %>
+
+
+
+
+
+  <%#= render "items/form" %>
+
+  <%#= render @items %>
+

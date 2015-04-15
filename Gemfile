@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.0'
+gem "animate-rails"
+gem 'simple_form', '~> 3.1.0'
 gem 'figaro', '1.0'
 gem 'bootstrap-form', '~> 3.0.0'
 gem 'devise'

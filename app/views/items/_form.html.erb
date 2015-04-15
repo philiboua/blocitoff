@@ -1,0 +1,16 @@
+<div class='row'>
+  <div class='col-md-6 form_create_item'>
+    <div class='form-group '>
+      <%= form_for [@user,@item] do |form| %>
+        <%= form.text_field :name, placeholder: 'add your new task', class: 'form-control item_float'%>
+        <% if @user.items.blank? %>
+        <%= form.submit 'Add your first Task', class: 'btn btn-default' %>
+        <% else %>
+        <%= form.submit 'Add new Task', class: 'btn btn-default' %>
+        <% end %>
+
+
+    </div>
+      <% end %>
+  </div>
+</div>

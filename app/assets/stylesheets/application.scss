@@ -22,7 +22,7 @@ body{
 }
 
 .right-nav{
-  margin-top:10px;
+  margin-top:15px;
   margin-right: 16px;
 }
 
@@ -33,7 +33,7 @@ body{
   color:#fff;
 
 }
-  /* style the placeholder welcome page */
+  /* style the placeholder welcome page 
 
 ::-webkit-input-placeholder {
 text-decoration:line-through;
@@ -53,7 +53,7 @@ color: red;
   text-decoration:line-through;
   color: red;  
 }
-
+*/
   /* start registration and new session devise */
 .title_page{
   color:#fff;
@@ -99,3 +99,31 @@ color: red;
   color:#fff;
   font-size: 17px;
 }
+/* start user show page */
+
+.welcome_page{
+  color:#fff;
+
+}
+
+.form_create_item{
+  margin:0 auto;
+  text-align: center;
+  margin-left: 300px;
+  margin-top:20px;
+}
+.item_float{
+  float:left;
+  width: 400px;
+
+}
+
+.margin_item_task{
+  margin-top:10px;
+  margin-bottom: 10px;
+  background-color: #FFE1FF;
+  margin-left: 325px;
+}
+
+
+
