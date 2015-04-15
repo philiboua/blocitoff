@@ -6,13 +6,13 @@ class ItemsController < ApplicationController
        redirect_to user_path(current_user), notice: "Task was saved successfully."
      else
        flash[:error] = "Error creating task. Please try again."
-       render :new
+       redirect_to user_path(current_user), notice: 'name field empty'
      end
   end
 
   def destroy
     @user = User.find(params[:user_id])
-    @item = @user.items
+    @item = @user.items.find(params[:id])
     
     if @item.destroy
       flash[:notice] = "\"#{@item.name}\" was deleted successfully."
