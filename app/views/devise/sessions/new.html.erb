@@ -3,6 +3,7 @@
 <div class='container'>
   <div class='row'>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
     <div class='fake_item_list'>
       <p class='catch_sentence'> Blocitoff, a todo list application. Create your list today!</p>
     <%=image_tag("bloc1.png", alt: "to-do list item 1")%>
