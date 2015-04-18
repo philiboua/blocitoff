@@ -1,8 +1,11 @@
 <div class='row' id="<%= dom_id(item) %>">
-  <div class='col-md-6 form_create_item '>
+  <div class='col-md-9 form_create_item '>
     <div class='form-group margin_item '>
-      <div class='form-control form_created_item margin_item_task item_float'><%= item.name %></div>
-        <%= link_to "task completed", item,class: 'btn btn-success',method: :delete,remote: true %>
+      <div class= 'correct_item_style'>
+        <div class='form-control  margin_item_task item_float'><%= item.name %></div>
+          <div class='btn btn-default item_days_left'> task expired in <%= item.days_left %> days </div>
+          <%= link_to "task completed", item,class: 'btn btn-success',method: :delete,remote: true %>
+        </div>
       </div>
     </div>
 </div>
