@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
 
+respond_to :html, :js
 
   def create
     @item = Item.new
@@ -18,11 +19,18 @@ class ItemsController < ApplicationController
     
     if @item.destroy
       flash[:notice] = "\"#{@item.name}\" was deleted successfully."
-      redirect_to :back
     else
       flash[:error] = "There was an error deleting the item."
-      render :show
-     end
+    end
+
+       respond_with(@item) do |f|
+        f.html { redirect_to :back }
+    end
+
+      #respond_to do |format|
+       #format.html
+      # format.js
+     #end
    end
 
 

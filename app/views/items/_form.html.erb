@@ -3,11 +3,11 @@
     <div class='form-group '>
       <%= form_for [@item] do |form| %>
         <%= form.text_field :name, placeholder: 'add your new task', class: 'form-control item_float'%>
-        <% if current_user.items.blank? %>
-        <%= form.submit 'Add your first Task', class: 'btn btn-default' %>
-        <% else %>
+        <%# if current_user.items.blank? %>
+        <%#= form.submit 'Add your first Task', class: 'btn btn-default' %>
+        <%# else %>
         <%= form.submit 'Add new Task', class: 'btn btn-default' %>
-        <% end %>
+        <% #end %>
 
 
     </div>
