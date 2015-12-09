@@ -1,11 +1,7 @@
-<h2 style='color:#fff'> Hey <%= current_user.name %> !</h2>
-  <% #if (current_user.items.blank? )  %>
-    <p style='color:#fff;'>Let's create your first Todo list, i will help you further</p>
-  <% #else  %>
-    <!--<p style='color:#fff;'> Time to finish the task(s) listed below </p> -->
-  <%# end %>
+  <h2 style='color:#fff'> Hey <%= current_user.name %> !</h2>
 
-
-<%= render partial: 'items/form' %>
-</br>
-<%= render @items %>
+  <p style='color:#fff;'>Let's create your first Todo list, i will help you further</p>
+  
+  <%= render partial: 'items/form' %>
+  </br>
+  <%= render @items %>

@@ -6,83 +6,87 @@
   /* Start welcome style path= views/welcome/index */
 
 .container{ 
+
   text-align:center;
+
 }
+
 body{
 
   background-color:#829db4;
-  /*background-color: #778899;*/
   text-align:center;
+
 }
 
 .title_app{
+
   margin-top: 30px;
   color:#fff;
   text-align: center;
+
 }
 
 .right-nav{
+
   margin-top:15px;
   margin-right: 16px;
+
 }
 
 
 .subtitle{
+
   font-size:90px;
   margin-top:20px;
   color:#fff;
 
 }
-  /* style the placeholder welcome page 
 
-::-webkit-input-placeholder {
-text-decoration:line-through;
-color: red;
-}
 
-:-moz-placeholder { 
-text-decoration:line-through;
-color: red;  
-}
 
-::-moz-placeholder {  
-  text-decoration:line-through;
-  color: red;  
-}
-:-ms-input-placeholder {  
-  text-decoration:line-through;
-  color: red;  
-}
-*/
   /* start registration and new session devise */
 .title_page{
+
   color:#fff;
+
 }
+
 .login { 
+
   margin:0 auto;
   text-align: center;
+
 }
 
 .field_login{
+
   width: 400px;
   margin:0 auto;
+
 }
 
 .form_login{
+
   margin-top: 20px;
+
 }
 
 .form-group label {
+
   color:#fff;
+
 }
 
 .password_length_indication{
+
   color: #fff;
+
 }
 
 /* start login style path devise/sessions/new */
 
 .login_form{
+
   float:right;
   margin-right-color:#fff;
   margin-right: 120px;
@@ -90,48 +94,61 @@ color: red;
 }
 
 .fake_item_list{
+
   width: 460px;
   float:left;
   margin-top:40px;
 
 }
+
 .catch_sentence{
+
   color:#fff;
   font-size: 17px;
+
 }
+
 /* start user show page */
 
 .welcome_page{
+
   color:#fff;
 
 }
 
 .form_create_item{
+
   margin:0 auto;
   text-align: center;
   margin-left: 300px;
   margin-top:20px;
+
 }
+
 .item_float{
+
   float:left;
   width: 400px;
  
-
 }
 
 .margin_item_task{
+
   background-color: #FFE1FF;
+
 }
 
 .margin_item{
+
   margin-top: 3px;
   margin-bottom: 0px;
+
 }
 
-.item_days_left{
-}
+
 
 .correct_item_style{
+  
   margin-right: 110px;
 }
 

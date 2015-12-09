@@ -2,14 +2,18 @@
   <div class='col-md-9 form_create_item '>
     <div class='form-group margin_item '>
       <div class= 'correct_item_style'>
-        <div class='form-control  margin_item_task item_float'><%= item.name %></div>
-          <div class='btn btn-default item_days_left'> task created <%= item.days_left %> days ago</div>
-          <%= link_to "task completed", item,class: 'btn btn-success',method: :delete,remote: true %>
+        <div class='form-control  margin_item_task item_float'>
+          <%= item.name %>
         </div>
+        <div class='btn btn-default item_days_left'> 
+          task created <%= item.days_left %> days ago
+        </div>
+            <%= link_to "task completed", item,class: 'btn btn-success',method: :delete,remote: true %>
       </div>
     </div>
+  </div>
 </div>
-
+  
 
 
 

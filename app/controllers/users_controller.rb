@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   def show
   @item = Item.new
   @items = current_user.items
-
- # @item = @user.items.find(params[:item_id])
   end
+  
 end
